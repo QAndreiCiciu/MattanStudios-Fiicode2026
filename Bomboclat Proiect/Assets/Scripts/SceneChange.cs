@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class SceneChange : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Tile_manager manager;
+    public Player_Behaviour player;
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        manager.Begin();
+        player.transform.position = new Vector3(2, 2, 0);
     }
 }

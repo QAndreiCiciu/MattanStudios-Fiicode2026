@@ -12,20 +12,19 @@ public class Tile_manager : MonoBehaviour
     private Tile _tempTile;
     public int sceneType;
     public SceneManager manager;
-    public bool reseting;
     void Start()
     {
         Begin();
     }
-    void Begin()
+    public void Begin()
     {
-        if (reseting) Res();
+        Res();
         generate();
     }
     
     private void Res()
     {
-        manager.matFloor[1, 1] = 0;
+        manager.matFloor[manager.xs, manager.ys] = 0;
     }
 
     private void generate()
@@ -37,7 +36,7 @@ public class Tile_manager : MonoBehaviour
             manager.matFloor[manager.xs, manager.ys] = sceneType;
         }
         else sceneType = manager.matFloor[manager.xs, manager.ys];
-        
+        Debug.Log(manager.matFloor[manager.xs, manager.ys]);
         var _scene = Resources.Load<SceneTemplate>($"Scene {sceneType}");
         List<ListElem> x = _scene.elems;
         for(int i = 0;i<x.Count;i++) {
@@ -53,6 +52,6 @@ public class Tile_manager : MonoBehaviour
                 }
             }
         }
-
+       
     }
 }

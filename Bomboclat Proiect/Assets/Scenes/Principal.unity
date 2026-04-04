@@ -2167,6 +2167,7 @@ GameObject:
   - component: {fileID: 135481267}
   - component: {fileID: 135481266}
   - component: {fileID: 135481269}
+  - component: {fileID: 135481270}
   m_Layer: 6
   m_Name: Tile 16 3
   m_TagString: Untagged
@@ -2183,7 +2184,7 @@ Transform:
   m_GameObject: {fileID: 135481264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.2771597, y: -1.86655, z: 0}
+  m_LocalPosition: {x: 8.27716, y: -1.86655, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2339,6 +2340,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &135481270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135481264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda08b1eeec723647890c69bbcb1449b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChange
+  manager: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &139773882
 GameObject:
   m_ObjectHideFlags: 0
@@ -17697,7 +17712,7 @@ Transform:
   m_GameObject: {fileID: 1324383707}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 5, z: 0}
+  m_LocalPosition: {x: 2, y: 2.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -7,8 +7,4 @@ public class SceneManager : ScriptableObject
 {
     public int xs=0, ys=0, type;
     public int[,] matFloor = new int[3,3];
-    public void change()
-    {
-
-    }
 }
