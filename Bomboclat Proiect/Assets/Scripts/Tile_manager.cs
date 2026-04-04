@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
@@ -12,23 +13,33 @@ public class Tile_manager : MonoBehaviour
     private Tile _tempTile;
     public int sceneType;
     public SceneManager manager;
+    public TextMeshProUGUI text;
+    public Sprite bg;
     void Start()
     {
+        Res();
         Begin();
     }
     public void Begin()
     {
-        Res();
+        
         generate();
     }
     
     private void Res()
     {
-        manager.matFloor[manager.xs, manager.ys] = 0;
+        for(int i = 0; i < 3; i++)
+        {
+            for(int j = 0; j < 3; j++) 
+                manager.matFloor[i, j] = 0;
+        }
+        manager.xs = 0;
+        manager.ys = 0;
     }
 
     private void generate()
     {
+        text.text = "x: " + manager.xs + "\ny:" + manager.ys;
         Random rnd = new Random();
         sceneType = rnd.Next(1,3);
         if (manager.matFloor[manager.xs, manager.ys] == 0)
@@ -52,6 +63,37 @@ public class Tile_manager : MonoBehaviour
                 }
             }
         }
-       
+       if(manager.xs!=0)
+        {
+            _tempTile = GameObject.Find($"Tile 1 3").GetComponent<Tile>();
+            _tempTile._sprite = bg;
+            _tempTile._coll = false;
+
+            _tempTile.Init();
+        }
+        if (manager.xs != 2)
+        {
+            _tempTile = GameObject.Find($"Tile 16 3").GetComponent<Tile>();
+            _tempTile._sprite = bg;
+            _tempTile._coll = false;
+
+            _tempTile.Init();
+        }
+        if (manager.ys != 0)
+        {
+            _tempTile = GameObject.Find($"Tile 2 9").GetComponent<Tile>();
+            _tempTile._sprite = bg;
+            _tempTile._coll = false;
+
+            _tempTile.Init();
+        }
+        if (manager.ys != 2)
+        {
+            _tempTile = GameObject.Find($"Tile 15 1").GetComponent<Tile>();
+            _tempTile._sprite = bg;
+            _tempTile._coll = false;
+
+            _tempTile.Init();
+        }
     }
 }

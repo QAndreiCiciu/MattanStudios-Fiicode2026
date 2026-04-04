@@ -37,12 +37,6 @@ MonoBehaviour:
     y2: 5
     collide: 1
     blockSprite: {fileID: 162147344, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
-  - x1: 16
-    y1: 3
-    x2: 16
-    y2: 3
-    collide: 1
-    blockSprite: {fileID: 1142231936, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
   - x1: 1
     y1: 9
     x2: 16
