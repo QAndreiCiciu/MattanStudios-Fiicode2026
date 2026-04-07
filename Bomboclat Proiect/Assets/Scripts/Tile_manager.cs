@@ -41,7 +41,7 @@ public class Tile_manager : MonoBehaviour
     {
         text.text = "x: " + manager.xs + "\ny:" + manager.ys;
         Random rnd = new Random();
-        sceneType = 3;//rnd.Next(3,4);
+        sceneType = rnd.Next(1,4);
         if (manager.matFloor[manager.xs, manager.ys] == 0)
         {
             manager.matFloor[manager.xs, manager.ys] = sceneType;

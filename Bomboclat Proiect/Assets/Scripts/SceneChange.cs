@@ -11,7 +11,8 @@ public class SceneChange : MonoBehaviour
     {
         
         scene_Manager.xs += dirx;
-        scene_Manager.ys += diry;tile_Manager.Begin();
+        scene_Manager.ys += diry;
+        tile_Manager.Begin();
         player.transform.position = new Vector3(2, 2, 0);
     }
 }
