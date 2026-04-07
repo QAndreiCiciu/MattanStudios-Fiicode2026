@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650e3f114e6554c419098d67cdc729bc, type: 3}
+  m_Name: Scene 3
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTemplate
+  elems:
+  - x1: 1
+    y1: 1
+    x2: 16
+    y2: 9
+    collide: 1
+    blockSprite: {fileID: -1707383169, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
+  - x1: 2
+    y1: 2
+    x2: 15
+    y2: 8
+    collide: 1
+    blockSprite: {fileID: -723774884, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
+  - x1: 6
+    y1: 6
+    x2: 6
+    y2: 6
+    collide: 1
+    blockSprite: {fileID: 4334783836991956000, guid: 7a1f3b481b478c746a957304edd18dfe, type: 3}
