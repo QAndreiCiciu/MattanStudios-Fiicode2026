@@ -13,6 +13,14 @@ public class SceneChange : MonoBehaviour
         scene_Manager.xs += dirx;
         scene_Manager.ys += diry;
         tile_Manager.Begin();
-        player.transform.position = new Vector3(2, 2, 0);
+        if(dirx == 0)
+        {
+            if (diry == 1) player.transform.position = new Vector3(2, 8.9f, 0);
+            else { player.transform.position = new Vector3(15, 1.1f, 0); player.rb.AddForceY(6, ForceMode2D.Impulse); }
+            }else
+        {
+            if (dirx == 1) player.transform.position = new Vector3(1, 3, 0);
+            else player.transform.position = new Vector3(16, 3, 0);
+        }
     }
 }

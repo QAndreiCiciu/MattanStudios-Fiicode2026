@@ -1,12 +1,13 @@
 using System;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class Player_Behaviour : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Transform tr;
     private int collided;
     private float moveX;
@@ -24,7 +25,7 @@ public class Player_Behaviour : MonoBehaviour
     private void OnMove(InputValue movementValue)
     {
         Vector2 movement = movementValue.Get<Vector2>();
-
+        
         moveX = movement.x;
     }
 
@@ -36,8 +37,9 @@ public class Player_Behaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 movement = new Vector2(moveX, 0);
+        Vector2 movement = new Vector2(Math.Abs(moveX), 0);
         tr.Translate(movement*speed*Time.deltaTime);
+        if(moveX!=0) tr.rotation = new Quaternion(0, 90 - moveX * 90, 0, 0);
         rb.AddForceY(jump, ForceMode2D.Impulse);
         jump = 0;
     }
