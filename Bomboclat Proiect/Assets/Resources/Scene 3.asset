@@ -18,16 +18,112 @@ MonoBehaviour:
     x2: 16
     y2: 9
     collide: 1
-    blockSprite: {fileID: -1707383169, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
+    blockSprite: {fileID: -1647608876, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
   - x1: 2
     y1: 2
     x2: 15
     y2: 8
     collide: 0
-    blockSprite: {fileID: -723774884, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
+    blockSprite: {fileID: 5533772074534313856, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 1
+    y1: 5
+    x2: 1
+    y2: 5
+    collide: 0
+    blockSprite: {fileID: -620642417, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
   - x1: 6
-    y1: 6
+    y1: 9
     x2: 6
+    y2: 9
+    collide: 0
+    blockSprite: {fileID: -620642417, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 16
+    y1: 5
+    x2: 16
+    y2: 5
+    collide: 0
+    blockSprite: {fileID: -620642417, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 11
+    y1: 1
+    x2: 11
+    y2: 1
+    collide: 0
+    blockSprite: {fileID: -620642417, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 2
+    y1: 2
+    x2: 4
+    y2: 3
+    collide: 1
+    blockSprite: {fileID: -1647608876, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 2
+    y1: 4
+    x2: 4
+    y2: 4
+    collide: 1
+    blockSprite: {fileID: 7531560390234535422, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 5
+    y1: 3
+    x2: 5
+    y2: 5
+    collide: 1
+    blockSprite: {fileID: -1464084582, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 5
+    y1: 6
+    x2: 5
     y2: 6
     collide: 1
-    blockSprite: {fileID: 4334783836991956000, guid: 7a1f3b481b478c746a957304edd18dfe, type: 3}
+    blockSprite: {fileID: 317464082, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 5
+    y1: 2
+    x2: 5
+    y2: 2
+    collide: 1
+    blockSprite: {fileID: -135953272, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 6
+    y1: 6
+    x2: 9
+    y2: 6
+    collide: 1
+    blockSprite: {fileID: -4568930363172303195, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 8
+    y1: 4
+    x2: 12
+    y2: 4
+    collide: 1
+    blockSprite: {fileID: -4568930363172303195, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 13
+    y1: 3
+    x2: 13
+    y2: 5
+    collide: 1
+    blockSprite: {fileID: -1464084582, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 13
+    y1: 2
+    x2: 13
+    y2: 2
+    collide: 1
+    blockSprite: {fileID: -135953272, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 13
+    y1: 6
+    x2: 13
+    y2: 6
+    collide: 1
+    blockSprite: {fileID: 317464082, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 3
+    y1: 8
+    x2: 3
+    y2: 8
+    collide: 1
+    blockSprite: {fileID: -3150332825891150030, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 13
+    y1: 8
+    x2: 13
+    y2: 8
+    collide: 1
+    blockSprite: {fileID: -3150332825891150030, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
+  - x1: 10
+    y1: 3
+    x2: 10
+    y2: 3
+    collide: 1
+    blockSprite: {fileID: -3150332825891150030, guid: 925a1a2d5a8a27f47a854c836dfc45a4, type: 3}
