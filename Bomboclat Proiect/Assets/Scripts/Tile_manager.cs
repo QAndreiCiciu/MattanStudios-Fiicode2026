@@ -47,8 +47,8 @@ public class Tile_manager : MonoBehaviour
             manager.matFloor[manager.xs, manager.ys] = sceneType;
         }
         else sceneType = manager.matFloor[manager.xs, manager.ys];
-        Debug.Log(manager.matFloor[manager.xs, manager.ys]);
         var _scene = Resources.Load<SceneTemplate>($"Scene {sceneType}");
+        bg = _scene.bgUsa;
         List<ListElem> x = _scene.elems;
         for(int i = 0;i<x.Count;i++) {
             for(int j = x[i].x1; j <= x[i].x2; j++)
@@ -65,7 +65,7 @@ public class Tile_manager : MonoBehaviour
         }
        if(manager.xs!=0)
         {
-            _tempTile = GameObject.Find($"Tile 1 3").GetComponent<Tile>();
+            _tempTile = GameObject.Find($"Tile 1 5").GetComponent<Tile>();
             _tempTile._sprite = bg;
             _tempTile._coll = false;
 
@@ -73,7 +73,7 @@ public class Tile_manager : MonoBehaviour
         }
         if (manager.xs != 2)
         {
-            _tempTile = GameObject.Find($"Tile 16 3").GetComponent<Tile>();
+            _tempTile = GameObject.Find($"Tile 16 5").GetComponent<Tile>();
             _tempTile._sprite = bg;
             _tempTile._coll = false;
 
@@ -81,7 +81,7 @@ public class Tile_manager : MonoBehaviour
         }
         if (manager.ys != 0)
         {
-            _tempTile = GameObject.Find($"Tile 2 9").GetComponent<Tile>();
+            _tempTile = GameObject.Find($"Tile 6 9").GetComponent<Tile>();
             _tempTile._sprite = bg;
             _tempTile._coll = false;
 
@@ -89,7 +89,7 @@ public class Tile_manager : MonoBehaviour
         }
         if (manager.ys != 2)
         {
-            _tempTile = GameObject.Find($"Tile 15 1").GetComponent<Tile>();
+            _tempTile = GameObject.Find($"Tile 11 1").GetComponent<Tile>();
             _tempTile._sprite = bg;
             _tempTile._coll = false;
 
