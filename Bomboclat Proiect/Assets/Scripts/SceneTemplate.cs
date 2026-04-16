@@ -6,5 +6,4 @@ using UnityEngine;
 public class SceneTemplate : ScriptableObject
 {
     public List<ListElem> elems;
-    public Sprite bgUsa;
 }

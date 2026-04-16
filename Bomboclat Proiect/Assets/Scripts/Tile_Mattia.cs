@@ -30,6 +30,5 @@ public class Tile_Mattia : MonoBehaviour
                 }
             }
         }
-        
     }
 }

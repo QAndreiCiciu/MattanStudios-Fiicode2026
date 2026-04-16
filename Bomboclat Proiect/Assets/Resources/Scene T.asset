@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 650e3f114e6554c419098d67cdc729bc, type: 3}
-  m_Name: Scene 2
+  m_Name: Scene T
   m_EditorClassIdentifier: Assembly-CSharp::SceneTemplate
   elems:
   - x1: 1
@@ -25,22 +25,4 @@ MonoBehaviour:
     y2: 8
     collide: 0
     blockSprite: {fileID: -723774884, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
-  - x1: 3
-    y1: 2
-    x2: 6
-    y2: 3
-    collide: 1
-    blockSprite: {fileID: 162147344, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
-  - x1: 8
-    y1: 5
-    x2: 11
-    y2: 5
-    collide: 1
-    blockSprite: {fileID: 162147344, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
-  - x1: 1
-    y1: 9
-    x2: 16
-    y2: 9
-    collide: 1
-    blockSprite: {fileID: -783543083, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
   bgUsa: {fileID: -723774884, guid: 8a4a53279ab1d31489052d75e5474de4, type: 3}
